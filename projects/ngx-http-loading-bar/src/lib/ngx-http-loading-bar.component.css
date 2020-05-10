@@ -1,0 +1,13 @@
+:host {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999999 !important;
+}
+
+.loader {
+  height: 2px;
+  width: 0;
+  transition: width 0.4s linear;
+}
