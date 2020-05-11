@@ -1,9 +1,33 @@
-<div class="div">
-  Example
+<div>
+  <ngx-http-loading-bar></ngx-http-loading-bar>
+
 </div>
 
-<ngx-http-loading-bar></ngx-http-loading-bar>
+<section class="section">
+  <div class="container">
 
+    <div class="hero is-light">
+      <div class="hero-body">
+        <div class="container">
+          <h4 class="title">Loading Bar</h4>
+          <p>
+            This library for indicate every http request and showing loading bar as line on the
+            top of page.
 
-<button (click)="start()">Start</button>
-<button (click)="complete()">Complete</button>
+            it contains component that should be added into parent app or header app.
+            To make sure the loading bar will be on top of the app ,
+            the component styled with absolute position so always will be top and above on all elements.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="buttons">
+        <button class="button is-primary" (click)="start()">Start</button>
+        <button class="button is-dark" (click)="complete()">Complete</button>
+      </div>
+
+    </section>
+  </div>
+</section>
