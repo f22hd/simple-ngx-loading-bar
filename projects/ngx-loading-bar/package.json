@@ -1,5 +1,5 @@
 {
-  "name": "ngx-http-loading-bar",
+  "name": "ngx-loading-bar",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^9.1.6",

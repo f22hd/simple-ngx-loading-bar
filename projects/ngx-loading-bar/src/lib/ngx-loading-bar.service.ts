@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Subject } from 'rxjs';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
-export class NgxHttpLoadingBarService {
+export class NgxLoadingBarService {
 
   private loader = new Subject<boolean>();
 

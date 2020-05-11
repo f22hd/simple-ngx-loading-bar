@@ -1,28 +1,28 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import { NgxHttpLoadingBarComponent } from './ngx-http-loading-bar.component';
-import { NgxHttpLoadingBarService } from './ngx-http-loading-bar.service';
+import { NgxLoadingBarComponent } from './ngx-loading-bar.component';
+import { NgxLoadingBarService } from './ngx-loading-bar.service';
 import { LoadingBar } from './ngx-loading-bar.model';
 import { loadingBarConfigService } from './ngx-loading-bar-config.service';
 
 
 
 @NgModule({
-  declarations: [NgxHttpLoadingBarComponent],
+  declarations: [NgxLoadingBarComponent],
   imports: [
     CommonModule,
     FormsModule
   ],
   providers: [
-    NgxHttpLoadingBarService
+    NgxLoadingBarService
   ],
-  exports: [NgxHttpLoadingBarComponent]
+  exports: [NgxLoadingBarComponent]
 })
-export class NgxHttpLoadingBarModule {
+export class NgxLoadingBarModule {
   static forRoot(config: LoadingBar): ModuleWithProviders {
     return {
-      ngModule: NgxHttpLoadingBarModule,
+      ngModule: NgxLoadingBarModule,
       providers: [
         {
           provide: loadingBarConfigService,

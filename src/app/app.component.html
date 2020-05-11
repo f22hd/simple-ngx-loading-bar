@@ -1,45 +1,44 @@
-<div>
-  <ngx-http-loading-bar></ngx-http-loading-bar>
+ <ngx-loading-bar></ngx-loading-bar>
 
-</div>
+ <div class="container">
+   <section class="section is-marginless is-paddingless">
+     <div class="hero is-light">
+       <div class="hero-body">
+         <h4 class="title has-text-info">ngx-loading-bar</h4>
+         <p class="subtitle">
+           This library is just build for indicate job needs loading indicator such as indicating a http
+           request and showing loading bar as line on the
+           top of page.
 
-<section class="section is-marginless">
-  <div class="container">
-    <div class="hero is-light">
-      <div class="hero-body">
-        <div class="container">
-          <h4 class="title has-text-info">ngx-loading-bar</h4>
-          <p class="subtitle">
-            This library for indicate every http request and showing loading bar as line on the
-            top of page.
+           it contains component that should be added into parent app or header app.
+           To make sure the loading bar will be on top of the app ,
+           the component styled with absolute position so always will be top and above on all elements.
+         </p>
+       </div>
+     </div>
+   </section>
 
-            it contains component that should be added into parent app or header app.
-            To make sure the loading bar will be on top of the app ,
-            the component styled with absolute position so always will be top and above on all elements.
-          </p>
-        </div>
-      </div>
-    </div>
+   <section class="section has-text-centered">
+     <h4>Try it now</h4>
+     <div class="buttons has-text-centered">
+       <button class="button is-info" (click)="start()">Start</button>
+       <button class="button is-dark" (click)="complete()">Complete</button>
+     </div>
+   </section>
 
-    <div class="section has-text-centered">
-      <h4>Try it now</h4>
-      <div class="buttons has-text-centered">
-        <button class="button is-info" (click)="start()">Start</button>
-        <button class="button is-dark" (click)="complete()">Complete</button>
-      </div>
-    </div>
-  </div>
-</section>
+   <section class="section is-marginless is-paddingless">
+     <footer class="footer has-background-white-ter	">
+       <div class="content has-text-centered">
+         <p>Feel free to share your feedback by PR or open issue in the repository.</p>
+         <a class="button is-medium" target="_blank" rel="noreferrer"
+           href="https://github.com/f22hd/ngx-loading-bar">
+           <span class="icon">
+             <i class="fab fa-github"></i>
+           </span>
+           <span>GitHub</span>
+         </a>
+       </div>
+     </footer>
+   </section>
 
-<footer class="footer">
-  <div class="content has-text-centered">
-    <p>Feel free to share your feedback by PR or open issue in the repository.</p>
-    <a class="button is-medium" target="_blank" rel="noreferrer"
-      href="https://github.com/f22hd/ngx-loading-bar">
-      <span class="icon">
-        <i class="fab fa-github"></i>
-      </span>
-      <span>GitHub</span>
-    </a>
-  </div>
-</footer>
+ </div>

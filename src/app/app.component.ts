@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgxHttpLoadingBarService } from 'ngx-http-loading-bar';
+import { NgxLoadingBarService } from 'ngx-loading-bar';
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ import { NgxHttpLoadingBarService } from 'ngx-http-loading-bar';
 export class AppComponent {
   title = 'loading-bar-app';
 
-  constructor(private loader: NgxHttpLoadingBarService) { }
+  constructor(private loader: NgxLoadingBarService) { }
 
   ngAfterContentInit(): void {
     //Called after ngOnInit when the component's or directive's content has been initialized.

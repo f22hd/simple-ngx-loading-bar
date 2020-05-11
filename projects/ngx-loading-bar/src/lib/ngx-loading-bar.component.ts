@@ -1,15 +1,15 @@
 import { Component, OnInit, ViewChild, ElementRef, OnDestroy, Inject } from '@angular/core';
-import { NgxHttpLoadingBarService } from './ngx-http-loading-bar.service';
+import { NgxLoadingBarService } from './ngx-loading-bar.service';
 import { Subscription } from 'rxjs';
 import { loadingBarConfigService } from './ngx-loading-bar-config.service';
 import { LoadingBar } from './ngx-loading-bar.model';
 
 @Component({
-  selector: 'ngx-http-loading-bar',
-  templateUrl: './ngx-http-loading-bar.component.html',
-  styleUrls: ['./ngx-http-loading-bar.component.css']
+  selector: 'ngx-loading-bar',
+  templateUrl: './ngx-loading-bar.component.html',
+  styleUrls: ['./ngx-loading-bar.component.css']
 })
-export class NgxHttpLoadingBarComponent implements OnInit, OnDestroy {
+export class NgxLoadingBarComponent implements OnInit, OnDestroy {
 
   @ViewChild('loader', { static: false }) loaderEl: ElementRef;
   loadingValue = 0;
@@ -19,7 +19,7 @@ export class NgxHttpLoadingBarComponent implements OnInit, OnDestroy {
   subscription: Subscription;
 
   constructor(
-    private loaderService: NgxHttpLoadingBarService,
+    private loaderService: NgxLoadingBarService,
     @Inject(loadingBarConfigService) private config: LoadingBar
   ) { }
 

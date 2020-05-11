@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NgxHttpLoadingBarModule } from 'ngx-http-loading-bar';
+import { NgxLoadingBarModule } from 'ngx-loading-bar';
 
 @NgModule({
   declarations: [
@@ -12,7 +12,7 @@ import { NgxHttpLoadingBarModule } from 'ngx-http-loading-bar';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxHttpLoadingBarModule.forRoot({
+    NgxLoadingBarModule.forRoot({
       color: 'red'
     })
   ],

@@ -111,38 +111,38 @@
         }
       }
     },
-    "ngx-http-loading-bar": {
+    "ngx-loading-bar": {
       "projectType": "library",
-      "root": "projects/ngx-http-loading-bar",
-      "sourceRoot": "projects/ngx-http-loading-bar/src",
-      "prefix": "ngx",
+      "root": "projects/ngx-loading-bar",
+      "sourceRoot": "projects/ngx-loading-bar/src",
+      "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ngx-http-loading-bar/tsconfig.lib.json",
-            "project": "projects/ngx-http-loading-bar/ng-package.json"
+            "tsConfig": "projects/ngx-loading-bar/tsconfig.lib.json",
+            "project": "projects/ngx-loading-bar/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/ngx-http-loading-bar/tsconfig.lib.prod.json"
+              "tsConfig": "projects/ngx-loading-bar/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ngx-http-loading-bar/src/test.ts",
-            "tsConfig": "projects/ngx-http-loading-bar/tsconfig.spec.json",
-            "karmaConfig": "projects/ngx-http-loading-bar/karma.conf.js"
+            "main": "projects/ngx-loading-bar/src/test.ts",
+            "tsConfig": "projects/ngx-loading-bar/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-loading-bar/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ngx-http-loading-bar/tsconfig.lib.json",
-              "projects/ngx-http-loading-bar/tsconfig.spec.json"
+              "projects/ngx-loading-bar/tsconfig.lib.json",
+              "projects/ngx-loading-bar/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
