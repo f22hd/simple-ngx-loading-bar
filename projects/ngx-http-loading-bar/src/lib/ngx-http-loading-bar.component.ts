@@ -43,6 +43,7 @@ export class NgxHttpLoadingBarComponent implements OnInit, OnDestroy {
   }
 
   startLoading() {
+    this.loadingValue = 0;
     this.isLoading = true;
     this.intervalId = setInterval(() => {
       this.keepLoading();
