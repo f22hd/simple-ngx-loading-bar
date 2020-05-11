@@ -6,7 +6,7 @@
   z-index: 999999 !important;
 }
 
-.loader {
+.loading-bar-loader {
   height: 2px;
   width: 0;
   transition: width 0.4s linear;
