@@ -1,6 +1,6 @@
 {
   "name": "loading-bar-app",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -45,5 +45,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/f22hd/simple-ngx-loading-bar"
   }
 }
