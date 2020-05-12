@@ -4,7 +4,7 @@ import { Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class NgxLoadingBarService {
+export class SimpleNgxLoadingBarService {
 
   private loader = new Subject<boolean>();
 

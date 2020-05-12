@@ -22,6 +22,10 @@
       "ngx-loading-bar": [
         "dist/ngx-loading-bar/ngx-loading-bar",
         "dist/ngx-loading-bar"
+      ],
+      "simple-ngx-loading-bar": [
+        "dist/simple-ngx-loading-bar/simple-ngx-loading-bar",
+        "dist/simple-ngx-loading-bar"
       ]
     }
   },

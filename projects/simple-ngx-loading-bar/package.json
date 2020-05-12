@@ -1,0 +1,19 @@
+{
+  "name": "simple-ngx-loading-bar",
+  "author": {
+    "email": "fa88hd@gmail.com",
+    "name": "Fahd Allebdi",
+    "url": "http://allebdi.me/"
+  },
+  "version": "0.0.3",
+  "peerDependencies": {
+    "@angular/common": "^9.1.6",
+    "@angular/core": "^9.1.6",
+    "tslib": "^1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/f22hd/simple-ngx-loading-bar"
+  },
+  "homepage": "simple-ngx-loading-bar.surge.sh"
+}
