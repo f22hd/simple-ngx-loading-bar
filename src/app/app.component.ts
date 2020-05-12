@@ -8,7 +8,7 @@ import { NgxLoadingBarService } from 'ngx-loading-bar';
 })
 export class AppComponent {
   title = 'loading-bar-app';
-
+  isLoading = false;
   constructor(private loader: NgxLoadingBarService) { }
 
   ngAfterContentInit(): void {
@@ -18,10 +18,12 @@ export class AppComponent {
 
 
   start() {
+    this.isLoading = true;
     this.loader.show();
   }
 
   complete() {
+    this.isLoading = false;
     this.loader.hide();
   }
 

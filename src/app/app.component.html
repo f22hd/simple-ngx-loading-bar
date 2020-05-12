@@ -21,8 +21,8 @@
    <section class="section has-text-centered">
      <h4>Try it now</h4>
      <div class="buttons has-text-centered">
-       <button class="button is-info" (click)="start()">Start</button>
-       <button class="button is-dark" (click)="complete()">Complete</button>
+       <button class="button is-info" [disabled]='isLoading' (click)="start()">Start</button>
+       <button class="button is-dark" [disabled]='!isLoading' (click)="complete()">Complete</button>
      </div>
    </section>
 
