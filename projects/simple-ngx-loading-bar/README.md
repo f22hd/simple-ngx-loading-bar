@@ -1,30 +1,67 @@
 # SimpleLoadingBar
 
-This library for indicate every http request and showing loading bar as line on the
-top of page.
+An angular library allows a developer to show the loading bar at the top of the app, such as indicating an Http request and showing the loading bar until request is finished.
 
-it contains component that should be added into parent app or header app.
-To make sure the loading bar will be on top of the app ,
-the component styled with absolute position so always will be top and above on all elements.
+#### About Library
 
-### When will be shown?
+it contains a single component that should be added into your parent component app or header app.
+To make sure the loading bar will be on top of the app,
+the component styled with an absolute position so always will be top and above on all elements.
 
-when http request starting , and increased slowly until the request is finished.
+### Installation
 
-### When will be disappeared?
+- run this command in your terminal
 
-it will be disappeared once a http request is finished.
+```
+npm i simple-ngx-loading-bar
+```
 
-### How can i use it?
+- import the module in your app module
 
-i made it simple as i can. just follow the below few steps:
+```
+import { SimpleNgxLoadingBarModule } from 'simple-ngx-loading-bar';
+@NgModule({
+  declarations: [...],
+  imports: [
+   ...,
+    SimpleNgxLoadingBarModule.forRoot({
+      color: 'red' // define your custom color by any background property value.
+    })
+  ],
+  providers: [],
+  bootstrap: [...]
+})
+export class AppModule { }
 
-- import the module into app module ( recommended ).
-- add ngx-loading-bar component in any component ( header ).
-- calling start/stop methods inside your http interceptor.
-  - before starting a request call start method.
-  - when you recieve your response call stop method.
-- That's set.
+```
+
+- add the selector into your component html
+
+```
+ <simple-ngx-loading-bar></simple-ngx-loading-bar>
+```
+
+- finally , we have it's service for controlling visiblity of the loading bar.
+
+```
+import { SimpleNgxLoadingBarService } from 'simple-ngx-loading-bar';
+
+export class AppComponent {
+  constructor(private loader: SimpleNgxLoadingBarService) { }
+
+  start() {
+  // show loading indicator
+    this.loader.show();
+  }
+
+  complete() {
+  // hide loading indicator
+    this.loader.hide();
+  }
+
+```
+
+That's set.
 
 ### Contribution
 
